@@ -6,7 +6,7 @@ export default function AboutUs() {
         
 
           <div className="mb-7 lg:mb-10">
-            <h2 className="text-base md:text-lg lg:text-xl font-semibold text-white mb-3 lg:mb-4">
+            <h2 className="text-base md:text-lg lg:text-xl font-semibold text-white mb-3 lg:mb-4  __className_b19098">
               Empowering Investors With Real-World Assets
             </h2>
             <p className="text-xs md:text-sm lg:text-base leading-relaxed">
@@ -14,7 +14,7 @@ export default function AboutUs() {
             </p>
           </div>
           <div className="mb-7 lg:mb-10">
-            <h2 className="text-base md:text-lg lg:text-xl font-semibold text-white mb-3 lg:mb-4">
+            <h2 className="text-base md:text-lg lg:text-xl font-semibold text-white mb-3 lg:mb-4  __className_b19098">
               Own Real-World Assets
             </h2>
             <p className="text-xs md:text-sm lg:text-base leading-relaxed">
@@ -22,7 +22,7 @@ export default function AboutUs() {
             </p>
           </div>
           <div>
-            <h2 className="text-base md:text-lg lg:text-xl font-semibold text-white mb-3 lg:mb-4">
+            <h2 className="text-base md:text-lg lg:text-xl font-semibold text-white mb-3 lg:mb-4  __className_b19098">
               Legacy Meets Liquidity
             </h2>
             <p className="text-xs md:text-sm lg:text-base leading-relaxed">

@@ -1,63 +1,62 @@
-'use client'
-import React from 'react'
-import { motion } from "framer-motion";
+'use client';
+import React, { useState } from 'react';
 
-export default function HowItsWorks() {
-  const steps = [
+export default function AccordionComponent() {
+  const [activeIndexRight, setActiveIndexRight] = useState(null);
+
+  const faqItemsRight = [
     {
-      step: 1,
-      title: 'Buy real-world asset token',
-      description: 'With the Rebel app , you can easily purchase RWA tokens, using either crypto or fiat currency'
+      question: 'Buy real-world asset token',
+      answer: 'With the Rebel app, you can easily purchase RWA tokens using either crypto or fiat currency.',
     },
     {
-      step: 2,
-      title: 'Earn yield and grow treasury',
-      description: 'Add your token to the REBEL vaults and earn yield so you can grow your treasury'
+      question: 'Earn yield and grow treasury',
+      answer: 'Add your token to the REBEL vaults and earn yield so you can grow your treasury.',
     },
     {
-      step: 3,
-      title: 'Get your token in your wallet',
-      description: 'After the transaction is complete, we will mint your token and transfers them directly to your wallet'
+      question: 'Get your token in your wallet',
+      answer: 'After the transaction is complete, we will mint your token and transfer them directly to your wallet.',
     },
     {
-      step: 4,
-      title: 'Redeem your token',
-      description: 'You can redeem your RWA tokens with $REB for either crypto, fiat, or the asset it self'
-    }
+      question: 'Redeem your token',
+      answer: 'You can redeem your RWA tokens with $REB for either crypto, fiat, or the asset itself.',
+    },
   ];
 
-  
+  const toggleAccordionRight = (index) => {
+    setActiveIndexRight(activeIndexRight === index ? null : index); // Toggle active index
+  };
+
   return (
-    <>
-      <div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {steps.map((step, index) => (
-            <motion.div initial={{
-              opacity: 0,
-              y: step.step % 12 === 0 ? -50 : 50
-            }}
-              whileInView={{
-                opacity: 1,
-                y: 0, 
-                transition: {
-                  duration: 1
-                }
+    <div className="how-its-work-accord">
+      <div className="how-its-work-accord-content">
+        {faqItemsRight.map((item, index) => (
+          <div key={index} className="accordion-item">
+            <button
+              className={`accordion-question  __className_b19098 ${activeIndexRight === index ? 'active' : ''}`}
+              onClick={() => toggleAccordionRight(index)}
+            >
+              <div className="button-upr-degin">
+                <div className="button-upr-inner"></div>
+              </div>
+              {item.question}
+              <span className="arrow">
+                {activeIndexRight === index ? '▲' : '▼'}
+              </span>
+            </button>
+            <div
+              className={`accordion-answer ${activeIndexRight === index ? 'open' : ''}`}
+              style={{
+                maxHeight: activeIndexRight === index ? '1000px' : '0',
+                opacity: activeIndexRight === index ? 1 : 0,
+                transition: 'max-height 0.5s ease, opacity 0.5s ease',
               }}
-              key={index}
-              className="relative bg-[#0f0f11] shadow-lg text-center py-6  px-3  shadow-md rounded-lg">
-              <div className="flex justify-center">
-                <h1 className='rounded-full  py-2 px-4 text-lg md:text-xl lg:text-2xl font-semibold bg-[#cc3cd9] text-white'>
-                  {step.step}
-                </h1>
-              </div>
-              <div className='mt-6'>
-                <h3 className="text-base md:text-lg lg:text-xl font-semibold text-white">{step.title}</h3>
-                <p className="text-xs md:text-sm lg:text-base  mt-3">{step.description}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+            >
+              <p>{item.answer}</p>
+            </div>
+          </div>
+        ))}
       </div>
-    </>
-  )
+    </div>
+  );
 }

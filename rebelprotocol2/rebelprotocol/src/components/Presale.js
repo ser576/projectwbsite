@@ -23,7 +23,6 @@ import UK from "/public/images/otherimages/uk_flag.png";
 import EURO from "/public/images/otherimages/euro.jpg";
 import US from "/public/images/otherimages/us_flag.png";
 import Link from "next/link";
-import Image from "next/image";
 import { CustomConnect } from "./CustomConnect";
 import { useAccount, useDisconnect } from "wagmi";
 import { config } from "../utils/config";
@@ -48,7 +47,20 @@ import {
   BigNumber,
 } from "ethers";
 import Histroy from "./Histroy";
+import Image from 'next/image';
 
+const logos = [
+  { src: '/images/chainlogo/cms-holdings.png', alt: 'cms-holdings' },
+  { src: '/images/chainlogo/Highland.png', alt: 'Highland' },
+  { src: '/images/chainlogo/Lg_Technology_ventures_logo.png', alt: 'Lg_Technology_ventures_logo.png' },
+  { src: '/images/chainlogo/Jane_Street_Capital_Logo.png', alt: 'Jane_Street_Capital_Logo.png' },
+  { src: '/images/chainlogo/GOLDEN-TREE-ASSET-MANAGEMENT.png', alt: 'GOLDEN TREE ASSET MANAGEMENT ' },
+  { src: '/images/chainlogo/XPERIMENT VC.png', alt: 'XPERIMENT VC' },
+  { src: '/images/chainlogo/NECESSARY-VC.png', alt: 'NECESSARY-VC' },
+  { src: '/images/chainlogo/continue-logo.png', alt: 'continue logo' },
+  
+  // Add more logos as needed
+];
 
 export default function Presale() {
   const [tab, setTab] = useState("crypto");
@@ -409,7 +421,7 @@ export default function Presale() {
     <>
       <div className="relative grid grid-cols-12 gap-y-8 lg:gap-8 mt-12">
         <div className="col-span-12 xl:col-span-6 w-full ">
-          <h1 className="text-3xl md:text-5xl  xl:text-6xl text-center xl:text-start  text-white font-semibold mb-12 lg:mb-16 lg:mt-7">
+          <h1 className="text-3xl md:text-5xl  xl:text-6xl text-center xl:text-start  text-white font-semibold mb-12 lg:mb-16 lg:mt-7 __className_b19098">
             Real-World Asset Tokenized Ecosystem
           </h1>
           <div className="flex justify-center w-full  mb-5 md:mb-7 lg:mb-10">
@@ -437,7 +449,7 @@ export default function Presale() {
           </div>
 
           <div className="flex items-center justify-center xl:justify-start space-x-3 md:space-x-5 ">
-            <Link
+            {/* <Link
               href="https://t.me/rebelprotocol"
               className="hover:text-[#cc3cd9] text-2xl md:text-3xl"
               target="_blank"
@@ -450,8 +462,17 @@ export default function Presale() {
               target="_blank"
             >
               <FaSquareXTwitter />
-            </Link>
+            </Link> */}
+            <h2 class="text-base md:text-lg lg:text-xxl font-semibold text-white mb-3 lg:mb-4  __className_b19098">Our Investor</h2>
           </div>
+          <div className="flex flex-wrap gap-4 mt-10">
+              {logos.map((logo, index) => (
+                <div key={index} className="flex-shrink-0 w-48 h-24 flex items-center justify-center border border-gray-200 rounded-md p-2">
+                  <Image src={logo.src} alt={logo.alt} width={100} height={100} className="object-contain w-full" />
+                </div>
+              ))}
+            </div>
+
         </div>
 
         <div className="col-span-12 relative xl:col-span-6  shadow-lg w-full px-0 sm:px-20 md:px-32 lg:px-20 xl:px-20 ">
