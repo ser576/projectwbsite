@@ -419,17 +419,17 @@ export default function Presale() {
 
   return (
     <>
-      <div className="relative grid grid-cols-12 gap-y-8 lg:gap-8 mt-12">
+      <div className="relative grid grid-cols-12 gap-y-8 lg:gap-8 sm:mt-12">
         <div className="col-span-12 xl:col-span-6 w-full ">
-          <h1 className="text-3xl md:text-5xl  xl:text-6xl text-center xl:text-start  text-white font-semibold mb-12 lg:mb-16 lg:mt-7 __className_b19098">
+          <h1 className="text-3xl md:text-5xl  xl:text-6xl sm:text-center xl:text-start  text-white font-semibold mb-12 lg:mb-16 lg:mt-7 __className_b19098">
             Real-World Asset Tokenized Ecosystem
           </h1>
           <div className="flex justify-center w-full  mb-5 md:mb-7 lg:mb-10">
-            <div className="flex flex-col px-3 md:px-6 py-4 border-2 rounded-lg border-[#FFFFFF1A] relative">
+            <div className="w-full sm:w-fit flex flex-col px-3 md:px-6 py-4 border-2 rounded-lg border-[#FFFFFF1A] relative">
               <h1 className="text-center mb-4 text-lg text-white">
                 Before Price Increase
               </h1>
-              <div className="flex items-center">
+              <div className="flex items-center justify-center">
                 <TimeBlock label="Days" value={days} />
                 <h3 className="font-semibold  text-2xl px-2 lg:px-3">:</h3>
                 <TimeBlock label="Hours" value={hours} />
@@ -465,17 +465,25 @@ export default function Presale() {
             </Link> */}
             <h2 class="text-base md:text-lg lg:text-xxl font-semibold text-white mb-3 lg:mb-4  __className_b19098">Our Investor</h2>
           </div>
-          <div className="flex flex-wrap gap-4 mt-10">
-              {logos.map((logo, index) => (
-                <div key={index} className="flex-shrink-0 w-48 h-24 flex items-center justify-center border border-gray-200 rounded-md p-2">
-                  <Image src={logo.src} alt={logo.alt} width={100} height={100} className="object-contain w-full" />
-                </div>
-              ))}
-            </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-10">
+            {logos.map((logo, index) => (
+              <div key={index} className="w-full h-24 flex items-center justify-center border border-gray-200 rounded-md p-2">
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  width={100} 
+                  height={100}
+                  className="object-contain w-full h-full"
+                />
+              </div>
+            ))}
+          </div>
+
+
 
         </div>
 
-        <div className="col-span-12 relative xl:col-span-6  shadow-lg w-full px-0 sm:px-20 md:px-32 lg:px-20 xl:px-20 ">
+        <div className="col-span-12 relative xl:col-span-6  shadow-lg w-full px-0 sm:px-20 md:px-32 lg:px-20 xl:px-20 presale-from">
           <div className="z-40 bg-[#0f0f11] rounded-lg  py-4 px-4 md:px-5">
             <h1 className="text-center text-xl md:text-2xl font-normal ">
               <div className="flex justify-center items-center">

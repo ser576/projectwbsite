@@ -82,13 +82,11 @@ export default function Heropage() {
           </div>
         </div>
           </motion.div> */}
-          <video style={{maxWidth: 500 + "px"}} className="" autoPlay loop muted playsInline>
-            <source
-              src="/images/otherimages/motion-banner-images.mp4"
-              type="video/mp4"
-            />
+          <video style={{ borderRadius: "100%", maxWidth: "500px", width: "100%" }} className="" autoPlay loop muted playsInline>
+            <source src="/images/otherimages/motion-video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+
         </div>
 
         {/* <div className="flex justify-center items-center">
@@ -130,13 +128,13 @@ export default function Heropage() {
     </div> */}
 
         <div className="flex justify-center flex-col">
-          <h1 className="text-start text-white  text-4xl lg:text-[50px] leading-[2.5rem] md:leading-[2.7rem] lg:leading-[4.2rem] font-bold mb-5 md:mb-4  lg:my-7 px-4 md:px-0 z-40 __className_b19098">
+          <h1 className="text-start text-white  text-4xl lg:text-[50px] leading-[2.5rem] md:leading-[2.7rem] lg:leading-[4.2rem] font-bold mb-5 md:mb-4  lg:my-7 px-0 z-40 __className_b19098">
             Legacy Meets Liquidity Is At Intersection
             <span className=" block md:inline lg:pl-5 text-[#CC3CD9]">
               Between <span className=" block lg:inline ">TradFi & DeFi</span>
             </span>
           </h1>
-          <p className="text-white text-xs md:text-sm lg:text-lg text-start">
+          <p className="text-white text-xs md:text-sm lg:text-lg text-start px-0">
             Offering investor grade gold & other RWAs backed 1:1 by real
             world-assets.
           </p>

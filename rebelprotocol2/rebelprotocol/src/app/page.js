@@ -38,7 +38,7 @@ export default function Home() {
           </div>
           <div id="section4">
             <div className="accordion-content mx-auto flex flex-col md:flex-row md:gap-[70px] justify-between">
-              <div className="accordion-section w-full md:w-1/2 px-4">
+              <div className="accordion-section w-full md:w-1/2 px-0 sm:px-4">
                 <div className="how-itswork-tittle">
                   <h1 className="text-3xl md:text-5xl  xl:text-6xl text-center text-white font-semibold mb-12 lg:mb-16 lg:mt-7 __className_b19098">
                   {`How It's Works`} <span></span>
@@ -46,7 +46,7 @@ export default function Home() {
                 </div>
                 <HowItsWorks />
               </div>
-              <div className="accordion-section w-full md:w-1/2 px-4">
+              <div className="accordion-section w-full md:w-1/2 px-0 sm:px-4">
                 <div className="why-tittle">
                   <h1 className="text-3xl md:text-5xl  xl:text-6xl text-center text-white font-semibold mb-12 lg:mb-16 lg:mt-7 __className_b19098">
                   {`Why`} <span></span>

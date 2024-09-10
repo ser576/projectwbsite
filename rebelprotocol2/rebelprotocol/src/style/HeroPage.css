@@ -298,6 +298,7 @@ div#section6 .sec-ttl {
   height: 100%;
   min-height: 340px;
   padding-bottom: 35px;
+  border-radius: 0 25px;
 }
 .date-wpr.ocupied-percentage {
   max-width: max-content;
@@ -312,8 +313,9 @@ div#section6 .sec-ttl {
   color: rgb(250 250 250 / 81%);
   line-height: 130%;
   text-transform: capitalize;
-  margin-bottom: 44px;
+  margin-bottom: 20px;
   font-weight: 800;
+  font-family: '__Orbitron_b19098', '__Orbitron_Fallback_b19098';
 }
 .roadmapCard ul {
   list-style: initial !important;
@@ -349,7 +351,7 @@ div#section6 .sec-ttl {
 }
 .swiper.roadmapSwiper .swiper-wrapper {
   position: relative;
-  padding-bottom: 120px;
+  padding-bottom: 70px;
 }
 .swiper.roadmapSwiper .swiper-slide {
   height: auto;
@@ -363,6 +365,24 @@ div#section6 {
   cursor: auto;
   pointer-events: none;
 }
+.custom-navigation {
+  position: relative;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.custom-navigation span.swiper-pagination-bullet {
+  background: #cd4cda;
+}
+.custom-navigation .swiper-button-prev, .custom-navigation .swiper-button-next, .custom-navigation .swiper-pagination {
+  position: unset;
+  display: flex;
+  width: auto !important;
+  margin: 0;
+}
+
 /* .swiper-button-prev:after,
 .swiper-button-next:after {
   display: none;
@@ -412,7 +432,9 @@ div#section6 {
   background: #cc3cd9 !important;
 }
 .swiper.roadmapSwiper .swiper-button-next,
-.swiper.roadmapSwiper .swiper-button-prev {
+.custom-navigation .swiper-button-next,
+.swiper.roadmapSwiper .swiper-button-prev,
+.custom-navigation .swiper-button-prev {
   width: 50px;
   padding: 20px;
   border-radius: 5px;
@@ -548,8 +570,21 @@ div#section7 {
 }
 .swiper-pagination {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 5px;
   justify-content: center;
   align-items: center;
+  bottom: 20px !important;
+}
+
+@media (min-width: 1281px) {
+  .presale-from{
+    padding-right: 0px !important;
+  }
+}
+
+@media (max-width: 580px) {
+  .supply-wpr span:last-child{
+    font-size: 24px;
+  }
 }
