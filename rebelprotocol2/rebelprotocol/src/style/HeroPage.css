@@ -587,4 +587,8 @@ div#section7 {
   .supply-wpr span:last-child{
     font-size: 24px;
   }
+  .accordion-question {
+    padding: 6px 15px;
+    font-size: 16px;
+  }
 }
