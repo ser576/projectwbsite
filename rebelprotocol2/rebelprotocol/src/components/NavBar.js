@@ -46,14 +46,14 @@ export default function NavBar() {
           <Image className="w-36  lg:w-46" src={logo} alt="Corporate Logo" width={100} height={100} priority />
         </ScrollLink>
         <div className='elative  hidden xl:flex space-x-6 font-medium items-center'>
-          <ScrollLink to="section1" smooth={true} duration={500} className="hover:text-[#cc3cd9 cursor-pointer">About Us</ScrollLink>
-          <ScrollLink to="section2" smooth={true} duration={500} className="hover:text-[#cc3cd9] cursor-pointer">Presale</ScrollLink>
-          <ScrollLink to="section3" smooth={true} duration={500} className="hover:text-[#cc3cd9] cursor-pointer">How It’s Work</ScrollLink>
-          <ScrollLink to="section4" smooth={true} duration={500} className="hover:text-[#cc3cd9] cursor-pointer">Why</ScrollLink>
-          <ScrollLink to="section5" smooth={true} duration={500} className="hover:text-[#cc3cd9] cursor-pointer">Tokenomic</ScrollLink>
-          <ScrollLink to="section6" smooth={true} duration={500} className="hover:text-[#cc3cd9] cursor-pointer">Roadmap</ScrollLink>
+          <ScrollLink to="section1" smooth={true} duration={500} className="hover:text-[#cc3cd9 cursor-pointer __className_b19098">About Us</ScrollLink>
+          <ScrollLink to="section2" smooth={true} duration={500} className="hover:text-[#cc3cd9] cursor-pointer __className_b19098">Presale</ScrollLink>
+          <ScrollLink to="section3" smooth={true} duration={500} className="hover:text-[#cc3cd9] cursor-pointer __className_b19098">How It’s Work</ScrollLink>
+          <ScrollLink to="section4" smooth={true} duration={500} className="hover:text-[#cc3cd9] cursor-pointer __className_b19098">Why</ScrollLink>
+          <ScrollLink to="section5" smooth={true} duration={500} className="hover:text-[#cc3cd9] cursor-pointer __className_b19098">Tokenomic</ScrollLink>
+          <ScrollLink to="section6" smooth={true} duration={500} className="hover:text-[#cc3cd9] cursor-pointer __className_b19098">Roadmap</ScrollLink>
 
-          <a href="https://rebel-protocol.gitbook.io/rebel-protocol-whitepaper/" target="_blanks" className="hover:text-[#cc3cd9]">WhitePaper</a>
+          <a href="https://rebel-protocol.gitbook.io/rebel-protocol-whitepaper/" target="_blanks" className="hover:text-[#cc3cd9] __className_b19098">WhitePaper</a>
           <div className="flex items-center space-x-5">
             <a href="https://t.me/rebelprotocol" target="_blank" className="hover:text-[#cc3cd9] text-2xl"><FaTelegram /></a>
             <a href="https://x.com/rebelprotocol" target="_blank" className="hover:text-[#cc3cd9] text-2xl"><FaSquareXTwitter /></a>
@@ -70,7 +70,7 @@ export default function NavBar() {
                     width={100}
                     height={100}
                     priority />
-                  <h1 className="font-semibold break-all">
+                  <h1 className="font-semibold break-all __className_b19098">
                     {/* {address.slice(0, 10)}... */}
                     {address ? address.slice(0, 10) : "No address"}
                   </h1>
