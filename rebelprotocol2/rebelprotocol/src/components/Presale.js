@@ -536,7 +536,7 @@ export default function Presale() {
                   transition={{ duration: 2 }}
                 />
                 <div className="absolute inset-0 flex justify-center items-center">
-                  <span className="text-white text-xs font-semibold">{`${width}%`}</span>
+                  <span className="text-xs font-semibold">{`${width}%`}</span>
                 </div>
               </div>
             </div>
@@ -711,7 +711,7 @@ export default function Presale() {
                   <button
                     onClick={BuyNow}
                     type="button"
-                    className="mt-6 text-center w-full rounded-full bg-[#fff] py-3 text-white text-base md:text-lg  font-medium"
+                    className="mt-6 text-center w-full rounded-full bg-[#fff] py-3 text-base md:text-lg  font-medium"
                     disabled={
                       selectedCurrency.value === "BNB"
                         ? parseFloat(numberOfChain) < fortyDollarsInBNB
