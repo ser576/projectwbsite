@@ -441,7 +441,7 @@ export default function Presale() {
 
               <div className="absolute text-center -top-7 -right-2 md:-top-7 md:-right-7 bg-[#0f0f11] px-3 py-1 rounded-lg">
                 <p className="text-xs md:text-sm">Next Price </p>
-                <h1 className="text-[#cc3cd9] text-base md:text-lg font-semibold">
+                <h1 className="text-[#fff] text-base md:text-lg font-semibold">
                   $0.012
                 </h1>
               </div>
@@ -487,7 +487,7 @@ export default function Presale() {
           <div className="z-40 bg-[#0f0f11] rounded-lg  py-4 px-4 md:px-5">
             <h1 className="text-center text-xl md:text-2xl font-normal ">
               <div className="flex justify-center items-center">
-                Buy <span className="font-bold text-[#cc3cd9] mx-2">$REB</span>{" "}
+                Buy <span className="font-bold text-[#ffffff] mx-2">$REB</span>{" "}
                 Now!
                 {/* <button onClick={disconnect} className="ml-4 py-1 px-3 ">
                   Disconnect
@@ -497,7 +497,7 @@ export default function Presale() {
             </h1>
 
             {/* {displayAddress} */}
-            <div className="mt-4 flex relative  bg-[#cc3cd9]/5  rounded-lg   ">
+            <div className="mt-4 flex relative  bg-[#fff]  rounded-lg   ">
               <div className="flex items-center flex-row gap-2 p-4 md:p-5 ">
                 <Image
                   src={metamask}
@@ -507,12 +507,12 @@ export default function Presale() {
                   height={100}
                   priority
                 />
-                <h1 className="text-[#cc3cd9]  text-base md:text-lg font-semibold break-all">
+                <h1 className="text-[#000]  text-base md:text-lg font-semibold break-all">
                   {address ? address.slice(0, 10) : "No address"}...
                 </h1>
               </div>
               <div
-                className="text-lg absolute p-3 right-0 bg-[#cc3cd9]/15 flex items-center h-full rounded-r-lg   cursor-pointer"
+                className="text-lg absolute p-3 right-0 bg-[#000]/15 text-[#000] flex items-center h-full rounded-r-lg   cursor-pointer"
                 onClick={copyToClipboard}
               >
                 <IoCopySharp />
@@ -528,9 +528,9 @@ export default function Presale() {
             </p>
 
             <div className=" my-1 flex flex-col items-center justify-center">
-              <div className="relative w-full bg-[#cc3cd9]/15 h-4 rounded overflow-hidden">
+              <div className="relative w-full bg-[#fff]/15 h-4 rounded overflow-hidden">
                 <motion.div
-                  className="absolute left-0 top-0 h-full bg-[#cc3cd9]"
+                  className="absolute left-0 top-0 h-full bg-[#fff]"
                   initial={{ width: 0 }}
                   animate={{ width: `${width}%` }}
                   transition={{ duration: 2 }}
@@ -554,7 +554,7 @@ export default function Presale() {
                 >
                   How To Buy{" "}
                 </span>{" "}
-                <span className="bg-[#cc3cd9] p-1 text-sm rounded text-white">
+                <span className="bg-[#ffffff] p-1 text-sm rounded text-white">
                   <FaQuestion />
                 </span>
               </div>
@@ -562,7 +562,7 @@ export default function Presale() {
             {popover && <HowToBuy togglehandler={togglehandler} />}
 
             <div
-              className={`text-base md:text-lg lg:text-xl font-medium mt-4 flex justify-center w-full items-center gap-2 justify-center py-2 text-[#cc3cd9] border-[#cc3cd9] border-b-2`}
+              className={`text-base md:text-lg lg:text-xl font-medium mt-4 flex justify-center w-full items-center gap-2 justify-center py-2 text-[#fff] border-[#fff] border-b-2`}
             >
               <span className="text-2xl">
                 <FaBitcoin />{" "}
@@ -574,7 +574,7 @@ export default function Presale() {
               <form onSubmit={handleSubmit}>
                 <div className="relative inline-block w-full">
                   <div
-                    className={`block w-full p-3 md:p-4 text-base flex items-center justify-between border-2 rounded-lg bg-black border-[#cc3cd9]`}
+                    className={`block w-full p-3 md:p-4 text-base flex items-center justify-between border-2 rounded-lg bg-black border-[#fff]`}
                   >
                     <div className="flex items-center">
                       {selectedChain.imgSrc && (
@@ -711,7 +711,7 @@ export default function Presale() {
                   <button
                     onClick={BuyNow}
                     type="button"
-                    className="mt-6 text-center w-full rounded-full bg-[#cc3cd9] py-3 text-white text-base md:text-lg  font-medium"
+                    className="mt-6 text-center w-full rounded-full bg-[#fff] py-3 text-white text-base md:text-lg  font-medium"
                     disabled={
                       selectedCurrency.value === "BNB"
                         ? parseFloat(numberOfChain) < fortyDollarsInBNB
@@ -754,7 +754,7 @@ export default function Presale() {
               />{" "}
               Your $REB Count
             </button>
-            <div className="text-center border-t-2 border-t-[#FFFFFF1A] text-[#cc3cd9]  flex text-sm md:text-lg font-semibold  justify-center  py-4">
+            <div className="text-center border-t-2 border-t-[#FFFFFF1A] text-[#fff]  flex text-sm md:text-lg font-semibold  justify-center  py-4">
               {userRebelCount > 0 ? userRebelCount.toFixed(2) : "0"} $REB
             </div>
           </div>
@@ -769,8 +769,8 @@ const TimeBlock = ({ label, value }) => {
     <div className="text-center">
       <div className="flex items-center justify-center space-x-0.5 md:space-x-1">
         {/* {value.split("").map((digit, index) => ( */}
-        <div className="p-2 lg:p-3 bg-[#cc3cd9] rounded-md">
-          <div className="inset-0 flex items-center justify-center text-2xl md:text-3xl lg:text-5xl font-bold text-white">
+        <div className="p-2 lg:p-3 bg-[#ffffff] rounded-md">
+          <div className="inset-0 flex items-center justify-center text-2xl md:text-3xl lg:text-5xl font-bold text-black">
             {value}
           </div>
         </div>

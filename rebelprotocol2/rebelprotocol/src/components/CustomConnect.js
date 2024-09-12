@@ -34,7 +34,7 @@ export const CustomConnect = () => {
                   <button
                     onClick={openConnectModal}
                     type="button"
-                    className="mt-6 text-center w-full rounded-full bg-[#cc3cd9] py-3 text-white text-base md:text-lg  font-medium"
+                    className="mt-6 text-center w-full rounded-full bg-[#fff] text-[#000] py-3 text-white text-base md:text-lg  font-medium"
                   >
                     Connect wallet 
                   </button>
