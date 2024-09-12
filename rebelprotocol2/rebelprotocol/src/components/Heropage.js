@@ -62,8 +62,8 @@ export default function Heropage() {
 
   return (
     <>
-      <div className="relative px-4 sm:px-7  lg:px-40 grid grid-cols-1 md:grid-cols-2   gap-7 lg:gap-16 pt-20 md:py-10 lg:py-28 overflow-hidden">
-        <div className="flex justify-center items-center">
+      <div className="relative px-4 sm:px-7  lg:px-40 grid grid-cols-1 md:grid-cols-2   gap-7 lg:gap-16 pt-20 md:py-10 lg:py-28 overflow-hidden" style={{ zIndex: -2 }}>
+        <div className="flex justify-center items-center overflow-hidden">
           {/* <motion.div
             className="relative px-10 xl:px-16 py-12 xl:py-20 w-[70%] md:w-[75%]"
             initial={{ x: '-100vw', rotate: 0 }}
@@ -82,10 +82,8 @@ export default function Heropage() {
           </div>
         </div>
           </motion.div> */}
-          <video style={{ borderRadius: "100%", maxWidth: "500px", width: "100%" }} className="" autoPlay loop muted playsInline>
-            <source src="/images/otherimages/motion-video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          
+          <img class="transform scale-125" src="/images/otherimages/motion-banner-images.gif" alt="video" />
 
         </div>
 
