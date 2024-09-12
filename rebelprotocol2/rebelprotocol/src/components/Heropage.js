@@ -129,7 +129,7 @@ export default function Heropage() {
           <h1 className="text-start text-white  text-4xl lg:text-[50px] leading-[2.5rem] md:leading-[2.7rem] lg:leading-[4.2rem] font-bold mb-5 md:mb-4  lg:my-7 px-0 z-40 __className_b19098">
             Legacy Meets Liquidity Is At Intersection
             <span className=" block md:inline lg:pl-5 text-[#ffffff] underline">
-              Between <span className=" block lg:inline ">TradFi & DeFi</span>
+              Between <span className=" block lg:inline ">TradeFi & DeFi</span>
             </span>
           </h1>
           <p className="text-white text-xs md:text-sm lg:text-lg text-start px-0">
